@@ -1,0 +1,47 @@
+.contenedorPersonaje {
+    background: radial-gradient(circle, rgba(189,223,64,1) 0%, rgba(64,181,203,1) 100%);
+    width: 100%;
+    position: relative;
+}
+
+.contenedorPersonaje h2 {
+    text-align: center;
+    margin-bottom: 3%;
+    padding-top: 3%;
+    font-size: 6rem;
+    font-family: 'Rick';
+}
+
+.contenedorPersonaje .todosLosPersonajes {
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contenedorPersonaje .todosLosPersonajes img, .nombre {
+    width: 9.5rem;
+    border-radius: 10px;
+}
+
+.contenedorPersonaje .todosLosPersonajes .personaje {
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.contenedorPersonaje button {
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contenedorPersonaje .fav {
+    position: absolute;
+    bottom: 14%;
+    left: 2%;
+    color: rgb(252, 252, 58);
+
+}

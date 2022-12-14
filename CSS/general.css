@@ -1,0 +1,10 @@
+@import url(landingPageHeader.css);
+@import url(landingPageMain.css);
+@import url(landingPageMainSearch.css);
+@import url(episodios.css);
+@import url(favoritos.css);
+@import url(personajes.css);
+
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {background-color: #f8f8f8;}

@@ -1,0 +1,29 @@
+.contenedorSearch {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorSearch .search {
+    width: 50%;
+    min-width: 350px;  
+    border-radius: 10px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 0.3%;
+}
+
+.contenedorSearch .icon-search {
+    font-size: 2em;
+}
+
+.contenedorSearch .inputSearch {
+    border: 0;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/fontello.css">
+    <script src="JS/JsLandigPage.js" defer></script>
+    <script src="JS/guardarFavs.js" defer></script>
+    <title>Rick and Morty || Not oficcial</title>
+</head>
+<body>
+    
+    <!--El header, donde esta el tirulo y el wave-->
+    <header>
+        <h1>Rick and Morty</h1>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
+            <path fill="#f8f8f8" fill-opacity="1" d="M0,192L48,213.3C96,235,192,277,288,277.3C384,277,480,235,576,229.3C672,224,768,256,864,266.7C960,277,1056,267,1152,250.7C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </header>
+
+
+    <main>     
+        
+        <!--En este secction se encuentra la barra de busqueda-->
+        <section class="contenedorSearch">
+            <div class="search">
+                <input type="text" placeholder="Are you looking for something specific?" class="inputSearch" id="search" name="search">
+                <i class="icon-search" onclick="search()"></i>
+            </div>
+        </section>
+
+
+        <!--En este secction se encuentran los personajes principales generados por JavaScript-->
+        <section class="contenedorPrincipales">
+            <h2 id="tituloSearch">Rick family</h2>
+
+            <div class="principales" id="principales">
+                <!--Los personajes se generan automaticamente con JavaScript-->
+            </div>
+        </section>
+
+
+        <!--En esta seccion se encuentran 20 personajes generados aleatoriamente, tambien los 3 filtros por los que puedes buscar-->
+        <section class="todosLosPersonajes">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f8f8f8" fill-opacity="1" d="M0,160L48,138.7C96,117,192,75,288,85.3C384,96,480,160,576,165.3C672,171,768,117,864,122.7C960,128,1056,192,1152,224C1248,256,1344,256,1392,256L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+            </svg>
+
+            <p class="secciones">Search by:</p>
+            <p class="secciones2"><a href="HTML/episodios.html">Episode</a> <a href="HTML/personajes.html">Character</a> <a href="HTML/favs.html">Favorites</a></p>
+
+            <div class="allPersonajes" id="allPersonajes">
+                <!--Aqui se generan los 20 personajes por JavaScript-->
+            </div>
+
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f8f8f8" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,101.3C384,75,480,53,576,80C672,107,768,181,864,192C960,203,1056,149,1152,144C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </section>
+
+
+        <!--En esta seccion esta el personaje random, que se va generando cada vez que el usuario puse el boton-->
+        <section class="personajeRandom">           
+            <button onclick="personajeAleatorio()">Discover a random character</button>
+
+            <div class="UnPersonajeRandom">
+                <div class="foto">
+                    <img src="IMG/default.jpg" alt="Personaje" id="fotoPerRandom">
+                </div>
+
+                <div class="info" id="infoPerRandom">
+                    <p><strong>Nombre:</strong> ----------</p>
+                    <p><strong>Genero:</strong> -------</p>
+                    <p><strong>Especie:</strong> --------</p>
+                    <p><strong>Origen:</strong> -------------</p>
+                    <p><strong>Status:</strong> -------</p>
+                </div>
+            </div>
+        </section> 
+        
+        
+        <section class="comentarios">
+            <h2>Seccion de comentarios</h2>
+
+            <textarea name="comentario" id="comentario" placeholder="Escribe tu comentario"></textarea>
+            <br>
+            <button onclick="guardarComentario()">Guardar</button>
+            <br><br>
+
+            <div class="cajonComent" id="cajonComent">
+
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+
+    <footer>
+        <p>Derechos reservados 2022/23 &copy;CopyRigth</p>
+    </footer>
+
+
+</body>
+</html>

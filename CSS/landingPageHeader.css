@@ -1,0 +1,49 @@
+header {
+    position: relative;
+    width: 100%; 
+    height: 60vh;
+    max-height: 500px;  
+    background-image: url(../IMG/fondo2.png);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header .wave {
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+header .logo {
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 15%;
+}
+
+header h1 {
+    font-family: "Rick";
+    text-align: center;
+    color: #40B5CB;
+    font-size: 6rem;
+
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5%;
+
+    text-shadow: 2px  0px 0px #C0DF40,
+    0px  2px 0px #C0DF40,
+   -2px  0px 0px #C0DF40,
+    0px -2px 0px #C0DF40;
+}
+
+@font-face {
+    font-family: "Rick";
+    src: url(../tipografia/Rick.ttf);
+}
